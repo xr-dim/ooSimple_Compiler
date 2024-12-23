@@ -1,6 +1,6 @@
-# ooSimpleToCMapper
+# ooSimple_Compiler
 
-The **ooSimpleToCMapper** is a powerful compiler designed for a custom object-oriented programming language
+The **ooSimple_Compiler** is a powerful compiler designed for a custom object-oriented programming language
 (`ooSimple`) and built using the ANTLR4 framework.
 This project provides a comprehensive implementation of compiler functionalities, including grammar parsing,
 semantic validation through symbol tables, and efficient code generation targeting the C programming language.
