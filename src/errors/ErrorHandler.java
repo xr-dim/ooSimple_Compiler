@@ -36,9 +36,6 @@ public class ErrorHandler {
         System.exit(-1);
     }
 
-
-    
-
     public static void assignmentsDataTypesConflict(String parameterDataType, String assigmentRightPartDataType, int line){
         System.err.println("Error at line : " + line);
         System.err.println("Expression of data type <" + assigmentRightPartDataType + "> cannot be assigned to a " +
