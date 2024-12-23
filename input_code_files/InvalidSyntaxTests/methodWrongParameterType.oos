@@ -1,0 +1,23 @@
+class Error :
+    int x;
+    ;
+
+    def __init__(self): Error
+        self.x = 0;
+        ;
+
+    def equals(self, Error x1): int
+        if(self.x == x1.x):
+            return 1;
+        else:
+            return 0;
+        endif;
+        ;
+
+class Main:
+    def main(self): -
+    Error e1;
+    int x;;
+    e1 = Error();
+    e1.equals(x);
+   ;

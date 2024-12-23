@@ -1,0 +1,62 @@
+class Factorial:
+    int n;
+    ;
+
+    def __init__(self, int n): Factorial
+        self.n = n;
+        ;
+
+   def computeFactorial(self): int
+        int result;;
+        result = 1;
+        while(self.n > 1):
+            result = result * self.n;
+            self.n = self.n - 1;
+        endwhile;
+
+        return result;
+
+        ;
+
+
+
+    def add5Numbers(self, int n1, int n2, int n3 , int n4, int n5) : int
+        int sum;;
+        sum = 0;
+        sum = sum + n1;
+        sum = sum + n2;
+        sum = sum + n3;
+        sum = sum + n4;
+        sum = sum + n5;
+        return sum;
+        ;
+
+
+
+
+
+
+
+
+class Main:
+
+    def main(self): -
+    Factorial f1;
+    int user_input;;
+
+    print "Enter n :";
+    input user_input;
+
+    f1 = Factorial(user_input);
+    print "result: ";
+    print f1.computeFactorial();
+
+
+    f1.add5Numbers(10,20,30,40,50);
+   ;
+
+
+
+
+
+

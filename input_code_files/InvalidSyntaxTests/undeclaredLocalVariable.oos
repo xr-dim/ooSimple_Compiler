@@ -1,0 +1,12 @@
+class Error :
+    int x;
+    ;
+
+    def __init__(self): Error
+        self.x = y
+        ;
+
+class Main:
+    def main(self): -
+    print "dummy command";
+   ;

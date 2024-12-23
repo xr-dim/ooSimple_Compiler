@@ -1,0 +1,193 @@
+class Vehicle:
+    int capacity;
+    int year;
+    ;
+
+    def __init__(self): Vehicle
+        int temp;;
+        temp = 0;
+        self.capacity = temp;
+        self.year = 0;
+        ;
+
+    def __init__(self, int capacity, int year): Vehicle
+        self.capacity = capacity;
+        self.year = year;
+        ;
+
+    def setCapacity(self, int capacity): -
+        self.capacity = capacity;
+        ;
+
+    def setYear(self, int x): -
+        self.year = x;
+        ;
+
+    def getCapacity(self): int
+        return self.capacity;
+        ;
+
+    def getYear(self): int
+        return self.year;
+        ;
+
+
+    def getFieldsSum(self): int
+        return self.capacity + self.year;
+        ;
+
+
+    def equals(self, Vehicle other): int
+        if([self.capacity == other.capacity] and [self.year == other.year]):
+            return 1;
+        else:
+            return 0;
+        endif;
+        ;
+
+
+
+
+class Car inherits Vehicle:
+    int doorsNumber;;
+
+    def __init__(self, int capacity , int year, int doorsNumber): Car
+        self.capacity = capacity;
+        self.year = year;
+        self.doorsNumber = doorsNumber;
+        ;
+
+    def __init__(self,int doorsNumber): Car
+        self.capacity = 0;
+        self.year = 0;
+        self.doorsNumber = doorsNumber;
+            ;
+
+
+    def setDoorsNumber(self, int x): -
+        self.doorsNumber = x;
+        ;
+
+    def getDoorsNumber(self): int
+        return self.doorsNumber;
+        ;
+
+    def getYearAsCar(self): int
+        return self.year;
+        ;
+
+    def setYearAsCar(self, int year): -
+        self.year = year;
+        ;
+
+
+    def getFieldsSum(self): int
+        return self.capacity + self.year + self.doorsNumber;
+        ;
+
+
+
+
+class Buss inherits Vehicle,Car:
+    int ticketPrice;
+    ;
+
+    def __init__(self,int capacity , int year , int doorsNumber, int ticketPrice): Buss
+        self.capacity = capacity;
+        self.year = year;
+        self.doorsNumber = doorsNumber;
+        self.ticketPrice = ticketPrice;
+        ;
+
+
+        def __init__(self,int capacity , int year , int doorsNumber): Buss
+                self.capacity = capacity;
+                self.year = year;
+                self.doorsNumber = doorsNumber;
+                ;
+
+        def __init__(self,int capacity , int ticketPrice): Buss
+            self.ticketPrice = 0;
+            self.ticketPrice = ticketPrice;
+            self.capacity = 0;
+            self.doorsNumber = 1 - 1;
+            ;
+
+
+        def getFieldsSum(self): int
+            return self.capacity + self.year + self.doorsNumber + self.ticketPrice;
+            ;
+
+        def setTicketPrice(self, int newPrice): -
+            self.ticketPrice = newPrice;
+            ;
+
+
+        def getTicketPrice(self): int
+            return self.ticketPrice;
+            ;
+
+
+
+
+
+
+
+####################################
+
+
+class Main:
+    def main(self): -
+        Vehicle v0, v1;
+        Car c1;
+        Buss b1;
+        int x;
+        ;
+
+        v0 = Vehicle();
+        print "v0 Capacity : ";
+        print v0.getCapacity();
+        print "v0 Year : ";
+        print v0.getYear();
+
+        v1 = Vehicle(7,1997);
+        print "v1 Capacity : ";
+        print v1.getCapacity();
+        print "v1 Year : ";
+        print v1.getYear();
+
+        v1.setCapacity(10);
+        v1.setYear(2003);
+        print "v1 Capacity : ";
+        print v1.getCapacity();
+        print "v1 Year : ";
+        print v1.getYear();
+
+        c1 = Car(2,2018,3);
+        print "Get year as vehicle : ";
+        print c1.getYear();
+        print "Get year as car : ";
+        print c1.getYearAsCar();
+
+        c1.setYear(1945);
+        c1.setYearAsCar(2000);
+
+        print "Get fields Sum. Should override vehicle : ";
+        print c1.getFieldsSum();
+
+
+        b1 = Buss(80,2024,3,5);
+        print "Buss capacity :  year:   doorsNumber:    ticketPrice:    \n";
+        print  b1.getCapacity(), b1.getYear(), b1.getDoorsNumber(), b1.getTicketPrice();
+
+
+       print b1.getFieldsSum();
+
+       b1.setDoorsNumber(1);
+       print b1.getDoorsNumber();
+
+       print b1.equals(v1);
+
+       x = b1.getCapacity() + b1.getYear() + b1.getDoorsNumber() + b1.getTicketPrice();
+       ;
+

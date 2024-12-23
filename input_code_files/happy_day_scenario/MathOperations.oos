@@ -1,0 +1,133 @@
+class MathOperations:
+    int a , b , c;
+    ;
+
+    def __init__(self): MathOperations
+        int x;
+        int y;
+        int z;
+        ;
+        x = 5;
+        self.a = 0;
+        self.b = x - 5;
+        y =  self.a + self.b ;
+        self.c = y;
+        z = 0;
+        ;
+
+    def __init__(self, int a , int b , int c): MathOperations
+        self.a = a;
+        self.b = b;
+        self.c = c;
+            ;
+
+
+    def fibonacci(self , int n ): int
+        int i , temp;;
+        if(n <= 0):
+            return 0;
+        else:
+            if( n == 1) :
+                return 1;
+            else :
+                self.a = 0;
+                self.b = 1;
+                i = 2;
+                while(i <= n):
+                    temp = self.a + self.b;
+                    self.a = self.b;
+                    self.b = temp;
+                    i = i + 1;
+                endwhile;
+            endif;
+        endif;
+
+        return self.b;
+        ;
+
+
+    def addNumbers(self, int num1, int num2): int
+        int sum;
+        ;
+        sum = num1 + num2;
+        return sum;
+        ;
+
+
+    def addNumbers(self, int num1 , int num2 , int num3): int
+        num1 = num1 + num2 + num3 ;
+        return num1;
+        ;
+
+    def conditionsMonster(self,int num1, int num2 , int num3): int
+        int max;;
+
+        if ([[num1 >= num2] and [num1 >= num3] and [[num2 <= num3] or [num2 + 1 == num3]]] or
+            [[num1 + num2 >= num3] and [num1 * 2 >= num3 * 2] and [[num3 % 2 == 0] or [num3 == num1 + num2]]] or
+            [[[num1 - num3 >= num2 - num3] and [num1 * num3 >= num2 * num2]] or [[num1 + num3 <= num2 * 3]]]) :
+            max = num1;
+        else :
+            if ([[num2 >= num1] and [num2 >= num3] and [[num1 % 2 == 0] or [num1 + num2 > num3]]] or
+                [[num2 * 2 >= num1 + num3] and [num2 - 1 >= num3] and [[num3 % 3 == 0] or [num1 <= num3]]]) :
+                max = num2;
+            else :
+                if ([[num3 >= num1] and [num3 >= num2] and [[num1 + num2 < num3 * 2] or [num2 % 2 == 1]]] or
+                    [[num3 + num2 >= num1 * 2] and [num3 - num1 >= num2 - 3] and [[num1 * num2 >= num3] or [num1 == 0]]]) :
+                    max = num3;
+                else :
+                    max = -1;
+                endif;
+            endif;
+        endif;
+
+        return max;
+        ;
+
+
+class Main:
+    def main(self): -
+    int x1 , x2 , x3;
+    MathOperations obj;
+    ;
+
+    MathOperations(1,2,3);
+    obj = MathOperations();
+    print "Hello world";
+    print "\n";
+
+
+    x1 = obj.fibonacci(10);
+    x2 = obj.fibonacci(x1);
+    x3 = x1 + x2;
+
+    obj.fibonacci(0);
+
+    obj.addNumbers(10,20);
+    obj.addNumbers(x1,x2,x3);
+
+    x1 = obj.conditionsMonster(10,20,30);
+
+    print x1;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ;
+
+
+
+
+
+
