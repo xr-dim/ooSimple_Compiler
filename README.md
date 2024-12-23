@@ -28,8 +28,7 @@ ANTLR4 (Another Tool for Language Recognition) is a parser generator used to bui
     - Grammar rules are categorized into lexer rules (for tokens) and parser rules (for syntax structure).
 
 2. **Lexer Generation**: ANTLR4 generates a lexer from the grammar file. The lexer scans the input code and breaks it into tokens based on the rules defined in the grammar.
-    - Tokens are the smallest meaningful units like keywords (`class`), identifiers (`myVar`)
-    - , or symbols (`{`, `}`).
+    - Tokens are the smallest meaningful units like keywords (`class`), identifiers (`myVar`), or symbols (`{`, `}`).
     - The lexer uses regular expressions defined in the grammar to recognize these tokens.
 
 3. **Parser Generation**: ANTLR4 generates a parser that organizes the tokens into a structured hierarchy according to the grammar rules.
@@ -98,9 +97,10 @@ The `ooSimple` programming language is a custom object-oriented language designe
 - Methods are defined using the keyword `def`, followed by the method name and parameters.
 - Methods can return values or modify the object's state.
 - The `self` keyword is used as the first parameter to refer to the current instance.
+- - The return type is specified after a colon `:`. If the method does not return a value, a dash (`-`) is used to indicate `void`.
 - Example:
   ```python
-  def calculate(self, value):
+  def calculate(self, value): int
       return value * 2;
   ```
 
@@ -109,7 +109,7 @@ The `ooSimple` programming language is a custom object-oriented language designe
 - Constructors are special methods named `__init__` and are used to initialize object properties.
 - Example:
   ```python
-  def __init__(self, name):
+  def __init__(self, name): int
       self.name = name;
   ```
 
