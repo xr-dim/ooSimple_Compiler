@@ -28,7 +28,8 @@ ANTLR4 (Another Tool for Language Recognition) is a parser generator used to bui
     - Grammar rules are categorized into lexer rules (for tokens) and parser rules (for syntax structure).
 
 2. **Lexer Generation**: ANTLR4 generates a lexer from the grammar file. The lexer scans the input code and breaks it into tokens based on the rules defined in the grammar.
-    - Tokens are the smallest meaningful units like keywords (`class`), identifiers (`myVar`), or symbols (`{`, `}`).
+    - Tokens are the smallest meaningful units like keywords (`class`), identifiers (`myVar`)
+    - , or symbols (`{`, `}`).
     - The lexer uses regular expressions defined in the grammar to recognize these tokens.
 
 3. **Parser Generation**: ANTLR4 generates a parser that organizes the tokens into a structured hierarchy according to the grammar rules.
@@ -91,7 +92,6 @@ The `ooSimple` programming language is a custom object-oriented language designe
   class MyClass inherits ParentClass1, ParentClass2:
       ...
   ```
-- Parent classes must be declared before their child classes to ensure proper scoping.
 
 ### Method Definitions
 
@@ -190,7 +190,9 @@ This flow ensures a clear separation of concerns, making the compiler modular, e
 
 ## How to Run the Project
 
-The **ooSimpleToCMapper** is designed to be run using IntelliJ IDEA for the best experience, as it integrates well with the ANTLR4 framework. However, it also includes a script for terminal-based execution.
+The **ooSimple_Compiler** runs directly using the run_antlr.sh script,
+which automates the compilation of ooSimple files into C. While IntelliJ IDEA was used during development,
+it is not a requirement for running the project.
 
 ### Running with the Script
 
@@ -223,11 +225,10 @@ The **ooSimpleToCMapper** is designed to be run using IntelliJ IDEA for the best
                 - `Factor.oos`
                 - `MathOperations.oos`
                 - `Vehicle.oos`
-            - `InvalidSyntaxTests`: Contains `oos` files with deliberate syntax and semantic errors for testing the compiler's error handling. Examples:
+            - `InvalidSyntaxTests`: Contains `oss` files designed to trigger specific syntax and semantic errors, testing the compiler's robustness in error handling.
                 - `undeclaredLocalVariable.oos`
                 - `assigmentDataTypesConflict.oos`
                 - `methodWrongParameterType.oos`
-        - These files can be used to test various functionalities of the compiler.
 
 ### Additional Notes
 
