@@ -16,6 +16,12 @@ Key highlights of this project include:
 - **Comprehensive Error Handling:** Handles syntax and semantic errors, such as undeclared variables or type mismatches, with detailed feedback.
 - **Readable C Code Output:** Produces clean and understandable C code, making it ideal for educational purposes or as a base for further development.
 
+## Features
+
+- **Advanced Testing Suite:** Includes a variety of test cases, from basic functionality to edge-case scenarios, ensuring robust and reliable compilation.
+- **Modular Codebase:** The compiler's structure allows for easy extension and modification of features, making it suitable for experimentation and educational purposes.
+- **Customizable Grammar:** The ANTLR4 grammar file can be easily updated to support new language features or constructs.
+
 ## ANTLR4 Overview
 
 ANTLR4 (Another Tool for Language Recognition) is a parser generator used to build compilers, interpreters, and translators for custom languages. In this project, it is used to define and process the `ooSimple` language. Key aspects include:
