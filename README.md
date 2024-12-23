@@ -97,7 +97,7 @@ The `ooSimple` programming language is a custom object-oriented language designe
 - Methods are defined using the keyword `def`, followed by the method name and parameters.
 - Methods can return values or modify the object's state.
 - The `self` keyword is used as the first parameter to refer to the current instance.
-- - The return type is specified after a colon `:`. If the method does not return a value, a dash (`-`) is used to indicate `void`.
+- The return type is specified after a colon `:`. If the method does not return a value, a dash (`-`) is used to indicate `void`.
 - Example:
   ```python
   def calculate(self, value): int
