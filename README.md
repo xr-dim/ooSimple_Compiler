@@ -16,11 +16,6 @@ Key highlights of this project include:
 - **Comprehensive Error Handling:** Handles syntax and semantic errors, such as undeclared variables or type mismatches, with detailed feedback.
 - **Readable C Code Output:** Produces clean and understandable C code, making it ideal for educational purposes or as a base for further development.
 
-## Features
-
-- **Advanced Testing Suite:** Includes a variety of test cases, from basic functionality to edge-case scenarios, ensuring robust and reliable compilation.
-- **Modular Codebase:** The compiler's structure allows for easy extension and modification of features, making it suitable for experimentation and educational purposes.
-- **Customizable Grammar:** The ANTLR4 grammar file can be easily updated to support new language features or constructs.
 
 ## ANTLR4 Overview
 
@@ -106,7 +101,7 @@ The `ooSimple` programming language is a custom object-oriented language designe
 - Example:
   ```python
   def calculate(self, value):
-      return value * 2
+      return value * 2;
   ```
 
 ### Constructor Definitions
@@ -115,7 +110,7 @@ The `ooSimple` programming language is a custom object-oriented language designe
 - Example:
   ```python
   def __init__(self, name):
-      self.name = name
+      self.name = name;
   ```
 
 ### Main Class
@@ -125,7 +120,7 @@ The `ooSimple` programming language is a custom object-oriented language designe
   ```python
   class Main:
       def main(self):
-          print("Hello, World!")
+          print("Hello, World!");
   ```
 
 ### Variables and Declarations
@@ -134,7 +129,10 @@ The `ooSimple` programming language is a custom object-oriented language designe
 - Multiple variables can be declared in a single line.
 - Example:
   ```python
-  int a, b, c
+  int a, b, c;
+  int x;
+  int z;
+  ;
   ```
 
 ### Control Flow Statements
@@ -143,15 +141,17 @@ The `ooSimple` programming language is a custom object-oriented language designe
 - Example of `if-else`:
   ```python
   if (x > 0):
-      print("Positive")
+      print("Positive");
   else:
-      print("Non-positive")
+      print("Non-positive");
+  endif;
   ```
 - Example of `while`:
   ```python
   while (x > 0):
-      x = x - 1
-      print(x)
+      x = x - 1;
+      print(x);
+  endwhile;
   ```
 
 These features combine to make `ooSimple` a structured and extensible language, ideal for learning and practical applications.
