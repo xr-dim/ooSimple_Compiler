@@ -141,16 +141,16 @@ The `ooSimple` programming language is a custom object-oriented language designe
 - Example of `if-else`:
   ```python
   if (x > 0):
-      print("Positive");
+      print "Positive";
   else:
-      print("Non-positive");
+      print "Non-positive";
   endif;
   ```
 - Example of `while`:
   ```python
   while (x > 0):
       x = x - 1;
-      print(x);
+      print x;
   endwhile;
   ```
 
