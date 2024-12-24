@@ -109,7 +109,7 @@ The `ooSimple` programming language is a custom object-oriented language designe
 - Constructors are special methods named `__init__` and are used to initialize object properties.
 - Example:
   ```python
-  def __init__(self, name): int
+  def __init__ClassName(self, name): int
       self.name = name;
   ```
 
