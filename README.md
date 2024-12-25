@@ -120,7 +120,7 @@ The `ooSimple` programming language is a custom object-oriented language designe
   ```python
   class Main:
       def main(self):
-          print("Hello, World!");
+          print "Hello, World!";
   ```
 
 ### Variables and Declarations
