@@ -111,6 +111,7 @@ The `ooSimple` programming language is a custom object-oriented language designe
   ```python
   def __init__ClassName(self, name): int
       self.name = name;
+      ;
   ```
 
 ### Main Class
@@ -121,6 +122,7 @@ The `ooSimple` programming language is a custom object-oriented language designe
   class Main:
       def main(self):
           print "Hello, World!";
+          ;
   ```
 
 ### Variables and Declarations
