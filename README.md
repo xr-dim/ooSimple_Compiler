@@ -155,8 +155,7 @@ The `ooSimple` programming language is a custom object-oriented language designe
       print x;
   endwhile;
   ```
-
-These features combine to make `ooSimple` a structured and extensible language, ideal for learning and practical applications.
+The ooSimpleGrammar.g4 file describe fully the language structure.
 
 ## Compiler Process Flow
 
